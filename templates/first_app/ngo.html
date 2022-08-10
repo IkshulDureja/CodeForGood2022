@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NGO Feeding Program</title>
+    <link rel="shortcut icon" href="{% static "images/logo.png" %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Homemade+Apple&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .cont {
+            padding: 0 100px;
+            padding-bottom: 50px;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900|Quicksand:300,400,500,700"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://127.0.0.1:8000/"><img src="{% static "images/logo.png" %}" height="75px"
+                    width="150px" style="padding: 5px;"></a>
+            <h1 style="color:#ffffff">NGO Feeding Program</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="https://buy.stripe.com/test_3cs4jd9ud50K35eaEF"><button type="button" class="btn btn-outline-success btn-lg">Donate
+                    Now !</button></a>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="{% static "images/ngo1.jpg" %}" height="616px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="color:whitesmoke; font-weight:bold">To serve the beneficiary organizations with a regular
+                        sustainable supply of sufficient groceries.</h2>
+                    <!-- <h5 style="color:black; font-weight:bold">To serve the beneficiary organizations with a regular
+                        sustainable supply of sufficient groceries.
+                    </h5> -->
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="{% static "images/ngo2.jpg" %}" height="616px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="color:whitesmoke; font-weight:bold">To provide the inmates with sufficient quantities of
+                        appropriate food to maintain their health and nutritional status.</h2>
+                    <!-- <h5 style="color: white; font-weight:bold">Alleviates the health and developmental consequences
+                        of
+                        childhood malnutrition.
+                    </h5> -->
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="{% static "images/ngo3.jpg" %}" height="616px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="color:whitesmoke; font-weight:bold">To improve nutritional interventions by reinforcing
+                        the interaction between the various actors in the programme.
+                    </h2>
+                    <!-- <h5 style="color:black; font-weight:bold">To prevent food wastage.
+                    </h5> -->
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="{% static "images/ngo4.jpg" %}" height="616px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 style="color:whitesmoke; font-weight:bold">To enable the beneficiary organizations to stay more
+                        focused towards their vision and an increase in the quality of
+                        service</h2>
+                    <!-- <h5 style="color:black; font-weight:bold">To ensure food security to the victims.
+                    </h5> -->
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Cards -->
+    <section id="programs">
+        <p style="padding:50px 50px 0px 50px ; font-weight:bold; text-align:center; font-size: large;">
+            The NGOs have appeared as the savior of countless numbers of people without food, clothing, education and
+            basic health
+            facilities.
+        </p>
+        <h2 style="padding: 20px; font-weight: bold; text-align: center;">How We Do it ?</h2>
+        <div class="cont d-flex justify-content-around">
+            <div class="card" style="width: 19rem; text-align: center;">
+                <!-- <img src="1.png" height="150px" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <!-- <h5 class="card-title">NGO FEEDING PROGRAM</h5> -->
+                    <p class="card-text">The program will supply essential groceries such as rice, pulses, oil, sugar,
+                        flours and snacks every month to the
+                        identified NGOs with residential programs or programs that provide food to the beneficiaries.
+                        The quantities to be
+                        distributed will be planned based on the number of inmates in the beneficiary organizations. We
+                        are currently backing 14
+                        non-profit organizations benefiting 1690 inmates with their monthly groceries supplied to them
+                        every month.</p>
+                    <a href="payment.html" class="btn btn-outline-success">Donate Now !</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
